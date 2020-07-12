@@ -9,7 +9,9 @@ use any label you wish :)
 Follow instructions [here](https://hub.docker.com/r/tiangolo/nginx-rtmp)
 
 To run it there is a convenient and simple docker-compose.yml for you to run:
-`docker-compose up -d`
+`STREAMING_SOURCE=all docker-compose up -d`
+
+replace all with any ip you like if you want to be restrictive.
 
 Example run:
 `docker run -d -p 80:80 -p 1935:1935 --name sss brandonpollack23/subspace-streaming:0.0.1`

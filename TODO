@@ -1,5 +1,4 @@
-* Security for uploading stream
-* Learn more nginx and seperate out html/js files like i should
+* Add auth to rtmp [https://www.scaleway.com/en/docs/setup-rtmp-streaming-server/]
 * https
 * Login on HTML
 * Improve look and feel of page
