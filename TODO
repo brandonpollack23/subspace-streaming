@@ -1,5 +1,6 @@
+* Security for uploading stream
 * Learn more nginx and seperate out html/js files like i should
-* http
+* https
 * Login on HTML
 * Improve look and feel of page
 * Multiple web containers: https://blog.florianlopes.io/host-multiple-websites-on-single-host-docker/
