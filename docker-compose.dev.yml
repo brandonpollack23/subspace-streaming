@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  streaming-server:
+    image: brandonpollack23/subspace-streaming
+    build: .
+    volumes:
+      - ./nginx:/etc/nginx
+      - ./web:/web
+    ports:
+      # HTTP server.
+      - 80:80
+      # RTMP server.
+      - 1935:1935
+    environment: 
+        # By default stream from the local computer (set in the .env file), override this by setting environemental variables.
+        - STREAMING_SOURCE=${STREAMING_SOURCE}

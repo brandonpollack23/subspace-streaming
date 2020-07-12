@@ -36,6 +36,10 @@ rtmp {
     application live {
       live on;
       record off;
+
+      # Only allow the configured streaming source to publish.
+      allow publish ${STREAMING_SOURCE};
+      deny publish all;
     }
   }
 }
