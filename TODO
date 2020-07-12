@@ -1,10 +1,7 @@
-* Git repo
-* Create dockerhub and publish
-* Learn more nginx/cgi and seperate out html/js files like i should
-* Login on HTML
 * Root address forwards to live.html
+* Login on HTML
+* Learn more nginx/cgi and seperate out html/js files like i should
 * https
-* get rid of "server_name" field?
 * Support both RTMP and HLS streaming at the same time
 * Improve look and feel of page
 * Get DNS name
