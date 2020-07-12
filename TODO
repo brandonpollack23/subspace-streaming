@@ -1,5 +1,11 @@
-* Learn more nginx/cgi and seperate out html/js files like i should
+* Learn more nginx and seperate out html/js files like i should
+* http
 * Login on HTML
-* https
 * Improve look and feel of page
-* Get DNS name
+* Multiple web containers: https://blog.florianlopes.io/host-multiple-websites-on-single-host-docker/
+* Make Blog (empty at first) and docker compose to spin up reverse proxy that fowards to each other container.
+
+* Blog ideas
+  Host myself, maybe with a post endpoint to take input, takes markdown and generates html content.
+  Bootstrap? Ghost?
+  Later on add comments/upvote system with some kind of DB
