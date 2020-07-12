@@ -3,7 +3,7 @@ Docker up and map ports 80:80 and 1935:1935 for HTTP and RTMP respectively.
 
 Stream to the RTMP port and watch at the html live.html address.
 
-the container is brandonpollack23/subspace-streaming
+the container is [brandonpollack23/subspace-streaming](https://hub.docker.com/repository/docker/brandonpollack23/subspace-streaming)
 use any label you wish :)
 
 Follow instructions [here](https://hub.docker.com/r/tiangolo/nginx-rtmp)
