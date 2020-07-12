@@ -1,4 +1,3 @@
-* Root address forwards to live.html
 * Login on HTML
 * Learn more nginx/cgi and seperate out html/js files like i should
 * https
