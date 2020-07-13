@@ -8,6 +8,8 @@
   - ffmpeg makes hls with exec push, no more nginx-rtmp hls.
   - Set remote hls server with env, in entrypoint configure ffmpeg command as a different env.
   - use pipe: https://ffmpeg.org/ffmpeg-protocols.html#pipe into hls: https://ffmpeg.org/ffmpeg-formats.html#hls-2
+  
+* Learn Ansible and see if i can create some "distributed mode" and "monolithic mode" startup scripts with and without provisioning
 
 * Improve look and feel of page
 * Multiple web containers: https://blog.florianlopes.io/host-multiple-websites-on-single-host-docker/
