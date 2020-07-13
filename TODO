@@ -1,9 +1,15 @@
-* Add auth to rtmp [https://www.scaleway.com/en/docs/setup-rtmp-streaming-server/]
+* Viewer username and password with basic auth
+* create uri for stream that hides stream key. https://benwilber.github.io/streamboat.tv/nginx/rtmp/streaming/2016/10/22/implementing-stream-keys-with-nginx-rtmp-and-django.html
+  - RTMP app for uploading that pushes to another which is what everyone else connects to.
+  - Node/Something server for logic of what stream keys (make stream keys file or db of some sort)
+  - change push to exec_push with ffmpeg (script that reads config) to make low/med/hi bandwidth options (front end or backend?) https://github.com/arut/nginx-rtmp-module/wiki/Directives#hls_variant
 * https
-* Login on HTML
+
 * Improve look and feel of page
 * Multiple web containers: https://blog.florianlopes.io/host-multiple-websites-on-single-host-docker/
 * Make Blog (empty at first) and docker compose to spin up reverse proxy that fowards to each other container.
+
+* use shell script (on path) with exec_push to read stream settings and push through ffmpeg
 
 * Blog ideas
   Host myself, maybe with a post endpoint to take input, takes markdown and generates html content.
