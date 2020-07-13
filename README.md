@@ -9,7 +9,7 @@ use any label you wish :)
 Follow instructions [here](https://hub.docker.com/r/tiangolo/nginx-rtmp)
 
 To run it there is a convenient and simple docker-compose.yml for you to run:
-`STREAMING_SOURCE=all docker-compose up -d`
+`STREAMING_SOURCE=IP_ADDRESS docker-compose up -d`
 
 replace all with any ip you like if you want to be restrictive.
 

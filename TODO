@@ -8,4 +8,6 @@
 * Blog ideas
   Host myself, maybe with a post endpoint to take input, takes markdown and generates html content.
   Bootstrap? Ghost?
-  Later on add comments/upvote system with some kind of DB
+  Login/Auth System with it's own page/popup (not html basic)
+    - DB store encrypted salted hashes and auth that
+  Later on add comments/upvote system 
