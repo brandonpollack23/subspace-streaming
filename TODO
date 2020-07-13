@@ -9,11 +9,10 @@
 * Multiple web containers: https://blog.florianlopes.io/host-multiple-websites-on-single-host-docker/
 * Make Blog (empty at first) and docker compose to spin up reverse proxy that fowards to each other container.
 
-* use shell script (on path) with exec_push to read stream settings and push through ffmpeg
-
 * Blog ideas
-  Host myself, maybe with a post endpoint to take input, takes markdown and generates html content.
-  Bootstrap? Ghost?
-  Login/Auth System with it's own page/popup (not html basic)
+  -Host myself, maybe with a post endpoint to take input, takes markdown and generates html content.
+  -Bootstrap? Ghost?
+  -Login/Auth System with it's own page/popup (not html basic)
     - DB store encrypted salted hashes and auth that
-  Later on add comments/upvote system 
+    - Support OAuth2 from google/facebook (use Auth0 potentially)
+  -Later on add comments/upvote system 
