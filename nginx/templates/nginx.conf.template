@@ -37,7 +37,7 @@ rtmp {
       live on;
       record off;
       # exec_push things like this to push lower quality versions for those who can't sustain the source bandwidth.
-      # exec_push ffmpeg -i rtmp://localhost/src/${DOLLAR}name -c:v libx264 -s 1280x720 -b:v 256k -c:a copy -tune zerolatency -f flv rtmp://localhost/live/${DOLLAR}name_mid;
+      # exec_push ffmpeg -i rtmp://localhost/${DOLLAR}app/${DOLLAR}name -c:v libx264 -preset ultrafast -s 1280x720 -b:v 128k -c:a copy -f flv rtmp://localhost/live/${DOLLAR}name_mid 2>>/ffmpeg_log.txt;
 
       # Only allow the configured streaming source to publish.
       allow publish ${STREAMING_SOURCE};
