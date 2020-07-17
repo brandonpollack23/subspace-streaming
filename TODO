@@ -1,3 +1,4 @@
+* Fix Stream Downscale Encoding
 * https
 * Viewer username and password with basic auth
 * create uri for stream that hides stream key. https://benwilber.github.io/streamboat.tv/nginx/rtmp/streaming/2016/10/22/implementing-stream-keys-with-nginx-rtmp-and-django.html
