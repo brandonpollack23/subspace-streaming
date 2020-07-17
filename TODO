@@ -21,5 +21,6 @@
   -Bootstrap? Ghost?
   -Login/Auth System with it's own page/popup (not html basic)
     - DB store encrypted salted hashes and auth that https://dev.to/werner/practical-rust-web-development-authentication-3ppg
+    - Make sure to store last changed date and compare with JWT body to verify pass wasnt changed.
     - Support OAuth2 from google/facebook (use Auth0 potentially)
   -Later on add comments/upvote system 
