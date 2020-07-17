@@ -37,3 +37,5 @@ and the environmental variables that configure the container can be passed as us
 
 If you're on WSL (Windows Subsystem for Linux) make sure you're using the right IP address to allow streaming from.
 The easiest way I've found to do this (since i am not sure how WSL configures its networking) is not detach from the container on startup, try to connect, and see what IP is getting denied.
+
+Can't use $ in the template, but DOLLAR is pre exported for you so just use $DOLLAR instead :)

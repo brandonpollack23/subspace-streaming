@@ -3,6 +3,7 @@ FROM tiangolo/nginx-rtmp
 # Install dependencies for env substitiution.
 RUN apt-get update 
 RUN apt-get install -y gettext
+RUN apt-get install -y ffmpeg
 
 EXPOSE 80
 
