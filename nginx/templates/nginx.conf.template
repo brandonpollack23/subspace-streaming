@@ -33,7 +33,7 @@ rtmp {
     listen 1935;
     listen [::]:1935 ipv6only=on;
 
-    application live {
+    application upload {
       live on;
       record off;
       # exec_push things like this to push lower quality versions for those who can't sustain the source bandwidth.
@@ -41,6 +41,14 @@ rtmp {
 
       # Only allow the configured streaming source to publish.
       allow publish ${STREAMING_SOURCE};
+      deny publish all;
+    }
+
+    application live {
+      live on;
+      record off;
+
+      allow publish localhost;
       deny publish all;
     }
   }
