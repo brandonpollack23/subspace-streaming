@@ -33,14 +33,26 @@ rtmp {
     listen 1935;
     listen [::]:1935 ipv6only=on;
 
-    application live {
+    application upload {
       live on;
       record off;
+
       # exec_push things like this to push lower quality versions for those who can't sustain the source bandwidth.
-      # exec_push ffmpeg -i rtmp://localhost/${DOLLAR}app/${DOLLAR}name -c:v libx264 -preset ultrafast -s 1280x720 -b:v 128k -c:a copy -f flv rtmp://localhost/live/${DOLLAR}name_mid 2>>/ffmpeg_log.txt;
+      # exec_push /usr/bin/ffmpeg -analyzeduration 10M -i rtmp://localhost/${DOLLAR}app/${DOLLAR}name -c:v libx264 -preset ultrafast -s 1280x720 -b:v 1200k -f flv rtmp://localhost/live/${DOLLAR}{name}_mid;
+
+      push rtmp://localhost/live;
 
       # Only allow the configured streaming source to publish.
       allow publish ${STREAMING_SOURCE};
+      deny publish all;
+    }
+
+    application live {
+      live on;
+      record off;
+      wait_video on;
+
+      allow publish 127.0.0.1;
       deny publish all;
     }
   }

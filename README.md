@@ -39,3 +39,6 @@ If you're on WSL (Windows Subsystem for Linux) make sure you're using the right 
 The easiest way I've found to do this (since i am not sure how WSL configures its networking) is not detach from the container on startup, try to connect, and see what IP is getting denied.
 
 Can't use $ in the template, but DOLLAR is pre exported for you so just use $DOLLAR instead :)
+
+# Use
+Upload to the /upload uri, stream from live and always seperate your transcodes to prevent accidental recursion.
